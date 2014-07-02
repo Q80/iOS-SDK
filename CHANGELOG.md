@@ -10,6 +10,7 @@ Features:
 	- Improved examples app
 	
 Refactoring:
+
 	- ESTBeacon method name changes:
 		- connectToBeacon -> connect
 		- disconnectBeacon -> disconnect

@@ -160,8 +160,8 @@
                 demoViewController = [[ESTBeaconTableVC alloc] initWithScanType:ESTScanTypeBeacon
                                                                      completion:^(ESTBeacon *beacon) {
                     
-                    ESTTemperatureDemoVC *distanceDemoVC = [[ESTTemperatureDemoVC alloc] initWithBeacon:beacon];
-                    [self.navigationController pushViewController:distanceDemoVC animated:YES];
+                    ESTTemperatureDemoVC *temperatureDemoVC = [[ESTTemperatureDemoVC alloc] initWithBeacon:beacon];
+                    [self.navigationController pushViewController:temperatureDemoVC animated:YES];
                 }];
                 
                 break;
@@ -171,8 +171,8 @@
                 demoViewController = [[ESTBeaconTableVC alloc] initWithScanType:ESTScanTypeBeacon
                                                                      completion:^(ESTBeacon *beacon) {
                     
-                    ESTAccelerometerDemoVC *proximityDemoVC = [[ESTAccelerometerDemoVC alloc] initWithBeacon:beacon];
-                    [self.navigationController pushViewController:proximityDemoVC animated:YES];
+                    ESTAccelerometerDemoVC *accelerometerDemoVC = [[ESTAccelerometerDemoVC alloc] initWithBeacon:beacon];
+                    [self.navigationController pushViewController:accelerometerDemoVC animated:YES];
                 }];
                 
                 break;
